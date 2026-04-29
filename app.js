@@ -189,7 +189,7 @@ function paginaPrincipal(visitas) {
     footer {
       text-align: center;
       padding: 20px;
-      color: #333;
+      color: #ddd;
       font-size: 0.75em;
       letter-spacing: 1px;
       border-top: 1px solid rgba(255,255,255,0.05);
@@ -249,7 +249,7 @@ function paginaPrincipal(visitas) {
   </div>
 
   <footer>
-    Artenis IT · ClusterTIC Asturias · 2025
+    Artenis IT · ClusterTIC Asturias · 2026
   </footer>
 </body>
 </html>`;
