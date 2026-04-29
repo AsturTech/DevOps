@@ -211,10 +211,12 @@ function paginaPrincipal(visitas) {
   </div>
 
   <div class="stats">
+    <a href="/aerogeneradores" style="text-decoration:none; color:inherit;">
     <div class="stat-card">
       <span class="numero">12</span>
       <span class="etiqueta">Aerogeneradores</span>
     </div>
+    </a>
     <div class="stat-card">
       <span class="numero">4</span>
       <span class="etiqueta">Sectores</span>
