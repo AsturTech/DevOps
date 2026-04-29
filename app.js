@@ -265,7 +265,7 @@ const server = http.createServer((req, res) => {
 
   console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
 
-  if (req.url === '/') {
+  if (req.url === '/' || req.url.startsWith('/?')) {
     res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
     res.end(paginaPrincipal(visitas));
     return;
