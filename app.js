@@ -280,7 +280,19 @@ res.end("<h1>Aerogeradores</h1><p>Listado funcionando</p>");
 return;
 }
   // TAREA 5: Añade aquí la ruta /salud
+if (req.url === "/salud") {
+  const data = {
+    status: "ok",
+    nombre: process.env.NOMBRE_PARQUE,
+    admin: process.env.ADMIN_EMAIL,
+    timestamp: new Date(),
+    uptime: process.uptime()
+  };
 
+  res.writeHead(200, { "Content-Type": "application/json" });
+  res.end(JSON.stringify(data, null, 2));
+  return;
+}
   res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
   res.end('<h1>404 - Ruta no encontrada</h1>');
 });
