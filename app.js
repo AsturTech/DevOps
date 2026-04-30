@@ -274,6 +274,11 @@ const server = http.createServer((req, res) => {
   }
 
   // TAREA 2: Añade aquí la ruta /aerogeneradores
+if (req.url === "/aerogeneradores") {
+res.writeHead(200, { "Content-Type": "text/html"});
+res.end("<h1>Aerogeradores</h1><p>Listado funcionando</p>");
+return;
+}
   // TAREA 5: Añade aquí la ruta /salud
 
   res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
